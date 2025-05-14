@@ -13,6 +13,7 @@ jobs:
         with:
           node-version: '18.x'
       - run: npm install
+      - run: chmod +x ./node_modules/.bin/jest # Grant executable permissions
       - run: npm test
          
        
