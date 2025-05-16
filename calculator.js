@@ -1,30 +1,4 @@
-function sum(a,b)
-{
-    return a + b;
-}
-
-function subtract(a,b)
-{
-    return a - b;
-}
-
-function multiply(a,b)
-{
-    return a * b;
-}
-
-function divide(a,b)
-{
-    if (b === 0) {
-        throw new Error("Cannot divide by zero");
-    }
-    return a / b;
-}
-
-function power(a,b)
-{
-    return Math.pow(a,b);
-}
+const { sum, subtract, multiply, divide, power } = require('./math');
 
 const readline = require('readline');
 
@@ -32,8 +6,6 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-
-module.exports = {sum, subtract, multiply, divide, power};
 
 console.log("Benvenuto nel calcolatore di SSGS, ecco di seguito le operazioni supportate:");
 console.log("1. Somma");
@@ -111,3 +83,6 @@ function askOperation() {
 }
 
 askOperation();
+
+
+
