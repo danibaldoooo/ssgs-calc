@@ -1,15 +1,36 @@
 {
   "name": "ssgs-calc",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A simple calculator for SSGS",
+  "main": "calculator.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage --verbose",
+    "start": "node ./calculator.js",
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["calculator", "ssgs"],
+  "author": "Daniel Baldoni <danielbaldo02@gmail.com>",
   "license": "ISC",
-  "description": "",
+  "dependencies": {
+    "n":"^10.1.0",
+    "stable":"^0.1.8",
+  },
+  
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danibaldoooo/ssgs-calc.git",
+
+  },
+
+  "bugs": {
+    "url": "https://github.com/danibaldoooo/ssgs-calc/issues"
+  },
+
+  "homepage": "https://github.com/danibaldoooo/ssgs-calc/readme",
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
